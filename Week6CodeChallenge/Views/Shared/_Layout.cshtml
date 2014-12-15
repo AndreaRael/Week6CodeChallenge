@@ -1,0 +1,70 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Fake Studio</title>
+
+    <!-- jQuery import -->
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+    <!---include our main js. file-->
+    <script src="~/Scripts/Name.JS"></script>
+
+    <!--impost stylesheet-->
+    <link rel="stylesheet" href="~/Content/Site.css" />
+
+</head>
+<body>
+   
+        <header>
+            <h1></h1>
+            <img src="http://cdn-img.easylogo.cn/gif/51/51700.gif" class="custominlineblock"  id="logo"/>
+                
+            <nav class="custominlineblock" id="navigate">
+                <ul class="nav nav-pills">
+                    <li role="presentation" class="active"><a href="#">Home</a></li>
+                    <li role="presentation"><a href="#">About</a></li>
+                    <li role="presentation"><a href="#">Work</a></li>
+                    <li role="presentation"><a href="#">Careers</a></li>
+                    <li role="presentation"><a href="#">Contact</a></li>
+                </ul>
+                @*Home, about, work, careers, contact*@
+               
+                
+            </nav>
+        </header>
+        <div id="container">
+            @RenderBody()
+        </div>
+   
+        <div class="col-md-3 column">TITLE<br />lorem ipsum, lorem ipsum. Lorem ipsum, Lorem ipsum. Lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum.</div>
+        <div class="col-md-3 column">TITLE<br />lorem ipsum, lorem ipsum. Lorem ipsum, Lorem ipsum. Lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum.</div>
+        <div class="col-md-3 column">TITLE<br />lorem ipsum, lorem ipsum. Lorem ipsum, Lorem ipsum. Lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum.</div>
+
+    @*<div class="one-third first">Content</div>
+    <div class="one-third second">Content</div>
+    <div class="one-third third">Content</div>*@
+
+    &nbsp; 
+    <footer>
+        <h4>Footer</h4>
+        <p>Copyright 2014 Fake Studio</p>
+        <p id="footernav">Home | About | Work | Careers | Contact</p>
+    </footer>
+
+</body>
+</html>
